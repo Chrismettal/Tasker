@@ -3,6 +3,9 @@
 Reworked version of Reminder with Google Calendar providing the same functionality as the original design, but providing an etched PCB making the build much cleaner and easier while providing a bit more documentation.
 The PCB mostly uses SMD parts and includes everything to enable USB-upload just like a Wemos D1 mini for example.
 
+Please check out Andreas' video of his original design:
+https://www.youtube.com/watch?v=sm1-l5-z3ag
+
 ![Tasker_v0.3 PCB](https://github.com/Chrismettal/Tasker/blob/master/img/pcbrender.png)
 
 Based on the original analog version to use 5 Buttons and 5 LEDs with available GPIO.
