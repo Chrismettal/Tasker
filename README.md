@@ -1,15 +1,15 @@
-![Tasker_v0.3 Logo](https://github.com/Chrismettal/Tasker/tree/master/img/logo.png)
+![Tasker_v0.3 Logo](https://github.com/Chrismettal/Tasker/blob/master/img/logo.png)
 
 Reworked version of Reminder with Google Calendar providing the same functionality as the original design, but providing an etched PCB making the build much cleaner and easier while providing a bit more documentation.
 The PCB mostly uses SMD parts and includes everything to enable USB-upload just like a Wemos D1 mini for example.
 
-![Tasker_v0.3 PCB](https://github.com/Chrismettal/Tasker/tree/master/img/pcbrender.png)
+![Tasker_v0.3 PCB](https://github.com/Chrismettal/Tasker/blob/master/img/pcbrender.png)
 
 Based on the original analog version to use 5 Buttons and 5 LEDs with available GPIO.
 
 A PCF8574 port expander is routed over i2c on the PCB but currently not implemented in source code. Does not need to be placed for the rest to function. Could be implemented for further external triggers to set/reset automated functions.
 
-![Built](https://github.com/Chrismettal/Tasker/tree/master/img/built.png)
+![Built](https://github.com/Chrismettal/Tasker/blob/master/img/built.png)
 
 # Build Notes
 
@@ -33,7 +33,7 @@ __Double check LED, C6 and C9 polarity!__
 
 # Case
 
-![CaseTop](https://github.com/Chrismettal/Tasker/tree/master/img/CaseTop.png)
+![CaseTop](https://github.com/Chrismettal/Tasker/blob/master/img/CaseTop.png)
 ![CaseBot](https://github.com/Chrismettal/Tasker/blob/master/img/CaseBot.png)
 
 The case is 3d printed just like the master, but a lot thinner and i hope more elegant. Any material is fine, no supports needed if you lay the top flat face down.
