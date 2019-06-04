@@ -1,0 +1,1533 @@
+EESchema Schematic File Version 4
+LIBS:Tasker-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Tasker"
+Date "2018-07-16"
+Rev "V0.3"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Tasker-rescue:USB_OTG J1
+U 1 1 5B4CE4E0
+P 1900 1750
+F 0 "J1" H 1700 2200 50  0000 L CNN
+F 1 "USB_OTG" H 1700 2100 50  0000 L CNN
+F 2 "Connectors_USB:USB_Micro-B_Wuerth-629105150521" H 2050 1700 50  0001 C CNN
+F 3 "" H 2050 1700 50  0001 C CNN
+	1    1900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5B4CE55F
+P 2300 1450
+F 0 "#PWR01" H 2300 1300 50  0001 C CNN
+F 1 "+5V" H 2300 1590 50  0000 C CNN
+F 2 "" H 2300 1450 50  0001 C CNN
+F 3 "" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B4CE580
+P 1800 2250
+F 0 "#PWR02" H 1800 2000 50  0001 C CNN
+F 1 "GND" H 1800 2100 50  0000 C CNN
+F 2 "" H 1800 2250 50  0001 C CNN
+F 3 "" H 1800 2250 50  0001 C CNN
+	1    1800 2250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2200 1950
+$Comp
+L Tasker-rescue:CH340G U1
+U 1 1 5B4CECE4
+P 4100 1700
+F 0 "U1" H 4100 2150 60  0000 C CNN
+F 1 "CH340G" H 4100 1250 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4100 1700 60  0001 C CNN
+F 3 "" H 4100 1700 60  0001 C CNN
+	1    4100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B4CED69
+P 3400 1450
+F 0 "R1" V 3350 1600 50  0000 C CNN
+F 1 "470R" V 3400 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 1450 50  0001 C CNN
+F 3 "" H 3400 1450 50  0001 C CNN
+	1    3400 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B4CEDF5
+P 3400 1550
+F 0 "R2" V 3350 1700 50  0000 C CNN
+F 1 "470R" V 3400 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 1550 50  0001 C CNN
+F 3 "" H 3400 1550 50  0001 C CNN
+	1    3400 1550
+	0    1    1    0   
+$EndComp
+Text GLabel 3250 1450 0    47   Input ~ 0
+RX
+Text GLabel 3250 1550 0    47   Input ~ 0
+TX
+$Comp
+L Device:Crystal Y1
+U 1 1 5B4CEF0B
+P 3150 2150
+F 0 "Y1" H 3150 2300 50  0000 C CNN
+F 1 "12MHz" H 3150 2000 50  0000 C CNN
+F 2 "Crystals:Crystal_SMD_HC49-SD_HandSoldering" H 3150 2150 50  0001 C CNN
+F 3 "" H 3150 2150 50  0001 C CNN
+	1    3150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5B4CEF6E
+P 2800 2300
+F 0 "C1" H 2810 2370 50  0000 L CNN
+F 1 "22pF" H 2810 2220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5B4CF02F
+P 3450 2300
+F 0 "C2" H 3460 2370 50  0000 L CNN
+F 1 "22pF" H 3460 2220 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3450 2300 50  0001 C CNN
+F 3 "" H 3450 2300 50  0001 C CNN
+	1    3450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5B4CF1AC
+P 3150 2500
+F 0 "#PWR03" H 3150 2250 50  0001 C CNN
+F 1 "GND" H 3150 2350 50  0000 C CNN
+F 2 "" H 3150 2500 50  0001 C CNN
+F 3 "" H 3150 2500 50  0001 C CNN
+	1    3150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5B4CF380
+P 2750 1500
+F 0 "C3" H 2760 1570 50  0000 L CNN
+F 1 "10nF" H 2760 1420 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2750 1500 50  0001 C CNN
+F 3 "" H 2750 1500 50  0001 C CNN
+	1    2750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B4CF4D4
+P 2550 1400
+F 0 "#PWR04" H 2550 1150 50  0001 C CNN
+F 1 "GND" H 2550 1250 50  0000 C CNN
+F 2 "" H 2550 1400 50  0001 C CNN
+F 3 "" H 2550 1400 50  0001 C CNN
+	1    2550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:S8050_correctpins Q1
+U 1 1 5B4CF744
+P 5650 1350
+F 0 "Q1" H 5850 1425 50  0000 L CNN
+F 1 "S8050" H 5850 1350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5850 1275 50  0001 L CIN
+F 3 "" H 5650 1350 50  0001 L CNN
+	1    5650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:S8050_correctpins Q2
+U 1 1 5B4CF802
+P 5650 1950
+F 0 "Q2" H 5850 2025 50  0000 L CNN
+F 1 "S8050" H 5850 1950 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5850 1875 50  0001 L CIN
+F 3 "" H 5650 1950 50  0001 L CNN
+	1    5650 1950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5B4CF8C2
+P 5250 1350
+F 0 "R3" V 5200 1500 50  0000 C CNN
+F 1 "12k" V 5250 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5180 1350 50  0001 C CNN
+F 3 "" H 5250 1350 50  0001 C CNN
+	1    5250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5B4CFA31
+P 5250 1950
+F 0 "R4" V 5200 2100 50  0000 C CNN
+F 1 "12k" V 5250 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5180 1950 50  0001 C CNN
+F 3 "" H 5250 1950 50  0001 C CNN
+	1    5250 1950
+	0    1    1    0   
+$EndComp
+Text GLabel 5850 1050 2    47   Input ~ 0
+GPIO0
+Text GLabel 5850 2250 2    47   Input ~ 0
+RST
+$Comp
+L power:+5V #PWR05
+U 1 1 5B4D00F1
+P 4650 1250
+F 0 "#PWR05" H 4650 1100 50  0001 C CNN
+F 1 "+5V" H 4650 1390 50  0000 C CNN
+F 2 "" H 4650 1250 50  0001 C CNN
+F 3 "" H 4650 1250 50  0001 C CNN
+	1    4650 1250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4550 2050
+NoConn ~ 4550 1950
+NoConn ~ 4550 1850
+NoConn ~ 4550 1750
+NoConn ~ 4550 1450
+$Comp
+L Device:R R5
+U 1 1 5B4D03C8
+P 6500 3400
+F 0 "R5" V 6450 3550 50  0000 C CNN
+F 1 "12k" V 6500 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 3400 50  0001 C CNN
+F 3 "" H 6500 3400 50  0001 C CNN
+	1    6500 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5B4D0535
+P 6500 3550
+F 0 "R6" V 6450 3700 50  0000 C CNN
+F 1 "12k" V 6500 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 3550 50  0001 C CNN
+F 3 "" H 6500 3550 50  0001 C CNN
+	1    6500 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5B4D0575
+P 6500 3700
+F 0 "R7" V 6450 3850 50  0000 C CNN
+F 1 "12k" V 6500 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 3700 50  0001 C CNN
+F 3 "" H 6500 3700 50  0001 C CNN
+	1    6500 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5B4D05B8
+P 6500 3850
+F 0 "R8" V 6450 4000 50  0000 C CNN
+F 1 "12k" V 6500 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 3850 50  0001 C CNN
+F 3 "" H 6500 3850 50  0001 C CNN
+	1    6500 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5B4D0612
+P 6500 4050
+F 0 "C4" V 6450 4100 50  0000 L CNN
+F 1 "470pF" V 6550 4100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6500 4050 50  0001 C CNN
+F 3 "" H 6500 4050 50  0001 C CNN
+	1    6500 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5B4D06B7
+P 6500 4250
+F 0 "R9" V 6450 4400 50  0000 C CNN
+F 1 "12k" V 6500 4250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 4250 50  0001 C CNN
+F 3 "" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5B4D0957
+P 6250 3300
+F 0 "#PWR06" H 6250 3150 50  0001 C CNN
+F 1 "+3.3V" H 6250 3440 50  0000 C CNN
+F 2 "" H 6250 3300 50  0001 C CNN
+F 3 "" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5B4D0A0B
+P 6250 4350
+F 0 "#PWR07" H 6250 4100 50  0001 C CNN
+F 1 "GND" H 6250 4200 50  0000 C CNN
+F 2 "" H 6250 4350 50  0001 C CNN
+F 3 "" H 6250 4350 50  0001 C CNN
+	1    6250 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 3850 2    47   Input ~ 0
+RST
+Text GLabel 6750 3700 2    47   Input ~ 0
+EN
+Text GLabel 6750 3550 2    47   Input ~ 0
+D4
+Text GLabel 6750 3400 2    47   Input ~ 0
+GPIO0
+Text GLabel 6750 4250 2    47   Input ~ 0
+GPIO15
+$Comp
+L Tasker-rescue:AP1117-33 U2
+U 1 1 5B4D2603
+P 4250 5550
+F 0 "U2" H 4250 5800 50  0000 C CNN
+F 1 "AP1117-3.3V" H 4000 5700 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223-3_TabPin2" H 4250 5750 50  0001 C CNN
+F 3 "" H 4350 5300 50  0001 C CNN
+	1    4250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR08
+U 1 1 5B4D275E
+P 4700 5500
+F 0 "#PWR08" H 4700 5350 50  0001 C CNN
+F 1 "+3.3V" H 4700 5640 50  0000 C CNN
+F 2 "" H 4700 5500 50  0001 C CNN
+F 3 "" H 4700 5500 50  0001 C CNN
+	1    4700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5B4D27EE
+P 3800 5500
+F 0 "#PWR09" H 3800 5350 50  0001 C CNN
+F 1 "+5V" H 3800 5640 50  0000 C CNN
+F 2 "" H 3800 5500 50  0001 C CNN
+F 3 "" H 3800 5500 50  0001 C CNN
+	1    3800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C6
+U 1 1 5B4D292E
+P 3800 5700
+F 0 "C6" H 3810 5770 50  0000 L CNN
+F 1 "100uF" V 3750 5400 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 3800 5700 50  0001 C CNN
+F 3 "" H 3800 5700 50  0001 C CNN
+	1    3800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C9
+U 1 1 5B4D3046
+P 4700 5750
+F 0 "C9" H 4710 5820 50  0000 L CNN
+F 1 "22uF" V 4650 5500 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Hand" H 4700 5750 50  0001 C CNN
+F 3 "" H 4700 5750 50  0001 C CNN
+	1    4700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:ESP-12E U3
+U 1 1 5B4D4506
+P 8400 1850
+F 0 "U3" H 8400 2500 50  0000 C CNN
+F 1 "ESP-12E" H 8400 1950 50  0000 C CNN
+F 2 "ESP8266:ESP-12E_SMD" H 8400 1850 50  0001 C CNN
+F 3 "" H 8400 1850 50  0001 C CNN
+	1    8400 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 1550 0    47   Input ~ 0
+RST
+Text GLabel 7500 1750 0    47   Input ~ 0
+EN
+Text GLabel 7500 1850 0    47   Input ~ 0
+D0
+Text GLabel 7500 1950 0    47   Input ~ 0
+D5
+Text GLabel 9300 1550 2    47   Input ~ 0
+TX
+Text GLabel 9300 1650 2    47   Input ~ 0
+RX
+Text GLabel 9300 1950 2    47   Input ~ 0
+GPIO0
+Text GLabel 9300 2050 2    47   Input ~ 0
+D4
+Text GLabel 7500 1650 0    47   Input ~ 0
+ADC
+NoConn ~ 8150 2750
+NoConn ~ 8250 2750
+NoConn ~ 8350 2750
+NoConn ~ 8450 2750
+NoConn ~ 8550 2750
+NoConn ~ 8650 2750
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5B4D6238
+P 7000 2150
+F 0 "#PWR010" H 7000 2000 50  0001 C CNN
+F 1 "+3.3V" H 7000 2290 50  0000 C CNN
+F 2 "" H 7000 2150 50  0001 C CNN
+F 3 "" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5B4D64EF
+P 9400 2350
+F 0 "#PWR012" H 9400 2100 50  0001 C CNN
+F 1 "GND" H 9400 2200 50  0000 C CNN
+F 2 "" H 9400 2350 50  0001 C CNN
+F 3 "" H 9400 2350 50  0001 C CNN
+	1    9400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:SW_Push_LED SW1
+U 1 1 5B4D7ED9
+P 8250 3550
+F 0 "SW1" H 8275 3775 50  0000 L CNN
+F 1 "SW_Push_LED" H 8250 3425 50  0000 C CNN
+F 2 "MeineBib:12mm_LED_pushbutton" H 8250 3850 50  0001 C CNN
+F 3 "" H 8250 3850 50  0001 C CNN
+	1    8250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:SW_Push_LED SW2
+U 1 1 5B4D85CE
+P 8250 4050
+F 0 "SW2" H 8275 4275 50  0000 L CNN
+F 1 "SW_Push_LED" H 8250 3925 50  0000 C CNN
+F 2 "MeineBib:12mm_LED_pushbutton" H 8250 4350 50  0001 C CNN
+F 3 "" H 8250 4350 50  0001 C CNN
+	1    8250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:SW_Push_LED SW3
+U 1 1 5B4D8641
+P 8250 4550
+F 0 "SW3" H 8275 4775 50  0000 L CNN
+F 1 "SW_Push_LED" H 8250 4425 50  0000 C CNN
+F 2 "MeineBib:12mm_LED_pushbutton" H 8250 4850 50  0001 C CNN
+F 3 "" H 8250 4850 50  0001 C CNN
+	1    8250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:SW_Push_LED SW4
+U 1 1 5B4D87CF
+P 8250 5050
+F 0 "SW4" H 8275 5275 50  0000 L CNN
+F 1 "SW_Push_LED" H 8250 4925 50  0000 C CNN
+F 2 "MeineBib:12mm_LED_pushbutton" H 8250 5350 50  0001 C CNN
+F 3 "" H 8250 5350 50  0001 C CNN
+	1    8250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:SW_Push_LED SW5
+U 1 1 5B4D8A6E
+P 8250 5550
+F 0 "SW5" H 8275 5775 50  0000 L CNN
+F 1 "SW_Push_LED" H 8250 5425 50  0000 C CNN
+F 2 "MeineBib:12mm_LED_pushbutton" H 8250 5850 50  0001 C CNN
+F 3 "" H 8250 5850 50  0001 C CNN
+	1    8250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5B4D8C62
+P 8700 3550
+F 0 "R15" V 8600 3550 50  0000 C CNN
+F 1 "180R" V 8700 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 3550 50  0001 C CNN
+F 3 "" H 8700 3550 50  0001 C CNN
+	1    8700 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5B4D9461
+P 8700 5550
+F 0 "R19" V 8600 5550 50  0000 C CNN
+F 1 "180R" V 8700 5550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 5550 50  0001 C CNN
+F 3 "" H 8700 5550 50  0001 C CNN
+	1    8700 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5B4D9269
+P 8700 5050
+F 0 "R18" V 8600 5050 50  0000 C CNN
+F 1 "180R" V 8700 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 5050 50  0001 C CNN
+F 3 "" H 8700 5050 50  0001 C CNN
+	1    8700 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5B4D91EE
+P 8700 4550
+F 0 "R17" V 8600 4550 50  0000 C CNN
+F 1 "180R" V 8700 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 4550 50  0001 C CNN
+F 3 "" H 8700 4550 50  0001 C CNN
+	1    8700 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5B4D9174
+P 8700 4050
+F 0 "R16" V 8600 4050 50  0000 C CNN
+F 1 "180R" V 8700 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 4050 50  0001 C CNN
+F 3 "" H 8700 4050 50  0001 C CNN
+	1    8700 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5B4DA199
+P 4250 6200
+F 0 "#PWR013" H 4250 5950 50  0001 C CNN
+F 1 "GND" H 4250 6050 50  0000 C CNN
+F 2 "" H 4250 6200 50  0001 C CNN
+F 3 "" H 4250 6200 50  0001 C CNN
+	1    4250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5B4DA366
+P 7900 5950
+F 0 "#PWR014" H 7900 5700 50  0001 C CNN
+F 1 "GND" H 7900 5800 50  0000 C CNN
+F 2 "" H 7900 5950 50  0001 C CNN
+F 3 "" H 7900 5950 50  0001 C CNN
+	1    7900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5B4DC26F
+P 7700 5700
+F 0 "R14" H 7600 5550 50  0000 C CNN
+F 1 "12k" V 7700 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 5700 50  0001 C CNN
+F 3 "" H 7700 5700 50  0001 C CNN
+	1    7700 5700
+	-1   0    0    1   
+$EndComp
+Text GLabel 8950 3550 2    47   Input ~ 0
+D0
+Text GLabel 8950 4050 2    47   Input ~ 0
+D4
+Text GLabel 8950 4550 2    47   Input ~ 0
+D5
+Text GLabel 8950 5050 2    47   Input ~ 0
+D6
+Text GLabel 8950 5550 2    47   Input ~ 0
+D7
+$Comp
+L Device:R R13
+U 1 1 5B4DFF7F
+P 7700 5200
+F 0 "R13" H 7600 5050 50  0000 C CNN
+F 1 "12k" V 7700 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 5200 50  0001 C CNN
+F 3 "" H 7700 5200 50  0001 C CNN
+	1    7700 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5B4E000E
+P 7700 4700
+F 0 "R12" H 7600 4550 50  0000 C CNN
+F 1 "12k" V 7700 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 4700 50  0001 C CNN
+F 3 "" H 7700 4700 50  0001 C CNN
+	1    7700 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5B4E009C
+P 7700 4200
+F 0 "R11" H 7600 4050 50  0000 C CNN
+F 1 "12k" V 7700 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 4200 50  0001 C CNN
+F 3 "" H 7700 4200 50  0001 C CNN
+	1    7700 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5B4E0388
+P 7700 3700
+F 0 "R10" H 7600 3550 50  0000 C CNN
+F 1 "12k" V 7700 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 3700 50  0001 C CNN
+F 3 "" H 7700 3700 50  0001 C CNN
+	1    7700 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 5B4E1293
+P 7700 3350
+F 0 "#PWR015" H 7700 3200 50  0001 C CNN
+F 1 "+5V" H 7700 3490 50  0000 C CNN
+F 2 "" H 7700 3350 50  0001 C CNN
+F 3 "" H 7700 3350 50  0001 C CNN
+	1    7700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5B4E15C4
+P 9450 3700
+F 0 "R20" H 9350 3550 50  0000 C CNN
+F 1 "390k" V 9450 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9380 3700 50  0001 C CNN
+F 3 "" H 9450 3700 50  0001 C CNN
+	1    9450 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5B4E1867
+P 9450 4200
+F 0 "R21" H 9350 4050 50  0000 C CNN
+F 1 "100k" V 9450 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9380 4200 50  0001 C CNN
+F 3 "" H 9450 4200 50  0001 C CNN
+	1    9450 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5B4E1C8A
+P 9450 4450
+F 0 "#PWR016" H 9450 4200 50  0001 C CNN
+F 1 "GND" H 9450 4300 50  0000 C CNN
+F 2 "" H 9450 4450 50  0001 C CNN
+F 3 "" H 9450 4450 50  0001 C CNN
+	1    9450 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 3950 2    47   Input ~ 0
+ADC
+Text Label 8900 3350 0    60   ~ 0
+A_Buttons
+Text Notes 1600 1000 0    60   ~ 0
+USB power and programming
+Text Notes 6100 3100 0    60   ~ 0
+Pullups/-downs
+Text Notes 3450 5250 0    60   ~ 0
+Voltage regulation
+Text Notes 6800 950  0    60   ~ 0
+Microcontroller
+Text Notes 7450 3100 0    60   ~ 0
+Buttons and LED
+$Comp
+L Tasker-rescue:Mounting_Hole MK1
+U 1 1 5B4E9155
+P 1800 3300
+F 0 "MK1" H 2000 3350 50  0000 C CNN
+F 1 "Mounting_Hole" H 2200 3250 50  0000 C CNN
+F 2 "MeineBib:EigenesMountingHole_2.7mm_M2.5" H 1800 3300 50  0001 C CNN
+F 3 "" H 1800 3300 50  0001 C CNN
+	1    1800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Mounting_Hole MK2
+U 1 1 5B4E9934
+P 1800 3550
+F 0 "MK2" H 2000 3600 50  0000 C CNN
+F 1 "Mounting_Hole" H 2200 3500 50  0000 C CNN
+F 2 "MeineBib:EigenesMountingHole_2.7mm_M2.5" H 1800 3550 50  0001 C CNN
+F 3 "" H 1800 3550 50  0001 C CNN
+	1    1800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Mounting_Hole MK3
+U 1 1 5B4E99CC
+P 1800 3800
+F 0 "MK3" H 2000 3850 50  0000 C CNN
+F 1 "Mounting_Hole" H 2200 3750 50  0000 C CNN
+F 2 "MeineBib:EigenesMountingHole_2.7mm_M2.5" H 1800 3800 50  0001 C CNN
+F 3 "" H 1800 3800 50  0001 C CNN
+	1    1800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Mounting_Hole MK4
+U 1 1 5B4E9A67
+P 1800 4050
+F 0 "MK4" H 2000 4100 50  0000 C CNN
+F 1 "Mounting_Hole" H 2200 4000 50  0000 C CNN
+F 2 "MeineBib:EigenesMountingHole_2.7mm_M2.5" H 1800 4050 50  0001 C CNN
+F 3 "" H 1800 4050 50  0001 C CNN
+	1    1800 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 1700 3100 0    60   ~ 0
+PCB stuff
+Text GLabel 9700 1850 2    47   Input ~ 0
+SDA
+Text GLabel 9700 1750 2    47   Input ~ 0
+SCL
+$Comp
+L Device:R R22
+U 1 1 5B4EBE7A
+P 9550 1500
+F 0 "R22" V 9500 1700 50  0000 C CNN
+F 1 "12k" V 9550 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9480 1500 50  0001 C CNN
+F 3 "" H 9550 1500 50  0001 C CNN
+	1    9550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5B4EC150
+P 9650 1500
+F 0 "R23" V 9600 1700 50  0000 C CNN
+F 1 "12k" V 9650 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9580 1500 50  0001 C CNN
+F 3 "" H 9650 1500 50  0001 C CNN
+	1    9650 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1550 2300 1550
+Wire Wire Line
+	2300 1550 2300 1450
+Wire Wire Line
+	1800 2150 1800 2200
+Wire Wire Line
+	1900 2150 1900 2200
+Wire Wire Line
+	1900 2200 1800 2200
+Connection ~ 1800 2200
+Wire Wire Line
+	3550 1450 3650 1450
+Wire Wire Line
+	3650 1550 3550 1550
+Wire Wire Line
+	2800 2150 3000 2150
+Wire Wire Line
+	3300 2150 3450 2150
+Wire Wire Line
+	3450 2050 3450 2150
+Wire Wire Line
+	2800 1950 2800 2150
+Wire Wire Line
+	2800 2400 2800 2450
+Wire Wire Line
+	2800 2450 3150 2450
+Wire Wire Line
+	3450 2450 3450 2400
+Wire Wire Line
+	3150 2500 3150 2450
+Connection ~ 3150 2450
+Wire Wire Line
+	3650 2050 3450 2050
+Wire Wire Line
+	3650 1950 2800 1950
+Connection ~ 3450 2150
+Connection ~ 2800 2150
+Wire Wire Line
+	3650 1650 2750 1650
+Wire Wire Line
+	2750 1650 2750 1600
+Wire Wire Line
+	2550 1350 2750 1350
+Wire Wire Line
+	2750 1350 2750 1400
+Wire Wire Line
+	2550 1350 2550 1400
+Connection ~ 2750 1350
+Wire Wire Line
+	3650 1750 2200 1750
+Wire Wire Line
+	2200 1850 3650 1850
+Wire Wire Line
+	5400 1950 5450 1950
+Wire Wire Line
+	5400 1350 5450 1350
+Wire Wire Line
+	4800 1350 5050 1350
+Wire Wire Line
+	4800 1950 5050 1950
+Wire Wire Line
+	5050 1350 5050 1600
+Connection ~ 5050 1350
+Wire Wire Line
+	5050 1750 5050 1950
+Connection ~ 5050 1950
+Wire Wire Line
+	5750 1550 5750 1600
+Wire Wire Line
+	5750 1600 5050 1750
+Wire Wire Line
+	5050 1600 5750 1750
+Wire Wire Line
+	5750 2150 5750 2250
+Wire Wire Line
+	5750 2250 5850 2250
+Wire Wire Line
+	5750 1150 5750 1050
+Wire Wire Line
+	5750 1050 5850 1050
+Wire Wire Line
+	4800 1350 4800 1550
+Wire Wire Line
+	4800 1550 4550 1550
+Wire Wire Line
+	4800 1950 4800 1650
+Wire Wire Line
+	4800 1650 4550 1650
+Wire Wire Line
+	4550 1350 4650 1350
+Wire Wire Line
+	4650 1350 4650 1250
+Wire Wire Line
+	6250 4050 6250 4250
+Wire Wire Line
+	6250 4250 6350 4250
+Wire Wire Line
+	6400 4050 6250 4050
+Connection ~ 6250 4250
+Wire Wire Line
+	6250 3300 6250 3400
+Wire Wire Line
+	6250 3400 6350 3400
+Wire Wire Line
+	6250 3550 6350 3550
+Connection ~ 6250 3400
+Wire Wire Line
+	6250 3700 6350 3700
+Connection ~ 6250 3550
+Wire Wire Line
+	6250 3850 6350 3850
+Connection ~ 6250 3700
+Wire Wire Line
+	6650 3400 6750 3400
+Wire Wire Line
+	6750 3550 6650 3550
+Wire Wire Line
+	6650 3700 6750 3700
+Wire Wire Line
+	6650 3850 6700 3850
+Wire Wire Line
+	6700 4050 6600 4050
+Wire Wire Line
+	6700 3850 6700 4050
+Connection ~ 6700 3850
+Wire Wire Line
+	6650 4250 6750 4250
+Wire Wire Line
+	4700 5500 4700 5550
+Wire Wire Line
+	7000 2250 7500 2250
+Wire Wire Line
+	9300 2250 9400 2250
+Wire Wire Line
+	9400 2250 9400 2350
+Wire Wire Line
+	8450 3550 8550 3550
+Wire Wire Line
+	8450 4050 8550 4050
+Wire Wire Line
+	8450 4550 8550 4550
+Wire Wire Line
+	8450 5050 8550 5050
+Wire Wire Line
+	8450 5550 8550 5550
+Wire Wire Line
+	7900 3550 7900 4050
+Wire Wire Line
+	7900 3550 8050 3550
+Wire Wire Line
+	8050 4050 7900 4050
+Connection ~ 7900 4050
+Wire Wire Line
+	8050 4550 7900 4550
+Connection ~ 7900 4550
+Wire Wire Line
+	8050 5050 7900 5050
+Connection ~ 7900 5050
+Wire Wire Line
+	8050 5550 7900 5550
+Connection ~ 7900 5550
+Wire Wire Line
+	8500 5450 8450 5450
+Wire Wire Line
+	8500 3350 8500 3450
+Wire Wire Line
+	8500 4950 8450 4950
+Wire Wire Line
+	8450 4450 8500 4450
+Connection ~ 8500 4950
+Wire Wire Line
+	8450 3950 8500 3950
+Connection ~ 8500 4450
+Connection ~ 8500 3950
+Wire Wire Line
+	8850 5550 8950 5550
+Wire Wire Line
+	8850 5050 8950 5050
+Wire Wire Line
+	8850 4550 8950 4550
+Wire Wire Line
+	8850 4050 8950 4050
+Wire Wire Line
+	8850 3550 8950 3550
+Wire Wire Line
+	8050 5450 7700 5450
+Wire Wire Line
+	7700 5350 7700 5450
+Wire Wire Line
+	8050 3450 7700 3450
+Wire Wire Line
+	7700 3350 7700 3450
+Wire Wire Line
+	7700 3850 7700 3950
+Wire Wire Line
+	7700 4350 7700 4450
+Wire Wire Line
+	7700 4850 7700 4950
+Connection ~ 7700 5450
+Wire Wire Line
+	8050 4950 7700 4950
+Connection ~ 7700 4950
+Wire Wire Line
+	8050 4450 7700 4450
+Connection ~ 7700 4450
+Wire Wire Line
+	8050 3950 7700 3950
+Connection ~ 7700 3950
+Wire Wire Line
+	7700 5850 7700 5900
+Wire Wire Line
+	7700 5900 7900 5900
+Connection ~ 7900 5900
+Connection ~ 7700 3450
+Connection ~ 8500 3450
+Wire Wire Line
+	9450 3350 9450 3550
+Wire Wire Line
+	9450 3850 9450 3950
+Wire Wire Line
+	9450 4350 9450 4450
+Wire Wire Line
+	9450 3950 9700 3950
+Connection ~ 9450 3950
+Wire Wire Line
+	8450 3450 8500 3450
+Wire Wire Line
+	8500 3350 9450 3350
+Wire Notes Line
+	6750 850  10050 850 
+Wire Notes Line
+	10050 850  10050 2900
+Wire Notes Line
+	10050 2900 6750 2900
+Wire Notes Line
+	6750 2900 6750 850 
+Wire Notes Line
+	7400 3000 7400 6200
+Wire Notes Line
+	7400 6200 10050 6200
+Wire Notes Line
+	10050 6200 10050 3000
+Wire Notes Line
+	10050 3000 7400 3000
+Wire Notes Line
+	3400 6450 5100 6450
+Wire Notes Line
+	5100 6450 5100 5150
+Wire Notes Line
+	5100 5150 3400 5150
+Wire Notes Line
+	3400 5150 3400 6450
+Wire Notes Line
+	6050 3000 7250 3000
+Wire Notes Line
+	7250 3000 7250 4600
+Wire Notes Line
+	7250 4600 6050 4600
+Wire Notes Line
+	6050 4600 6050 3000
+Wire Notes Line
+	1550 850  6650 850 
+Wire Notes Line
+	6650 850  6650 2900
+Wire Notes Line
+	6650 2900 1550 2900
+Wire Notes Line
+	1550 2900 1550 850 
+Wire Notes Line
+	2650 3000 2650 5050
+Wire Notes Line
+	2650 3000 1550 3000
+Text GLabel 7500 2050 0    47   Input ~ 0
+D6
+Text GLabel 7500 2150 0    47   Input ~ 0
+D7
+Wire Wire Line
+	9300 1750 9650 1750
+Wire Wire Line
+	9300 1850 9550 1850
+Wire Wire Line
+	9650 1650 9650 1750
+Connection ~ 9650 1750
+Wire Wire Line
+	9550 1650 9550 1850
+Connection ~ 9550 1850
+$Comp
+L power:+3.3V #PWR017
+U 1 1 5B4F0FF7
+P 9550 1150
+F 0 "#PWR017" H 9550 1000 50  0001 C CNN
+F 1 "+3.3V" H 9550 1290 50  0000 C CNN
+F 2 "" H 9550 1150 50  0001 C CNN
+F 3 "" H 9550 1150 50  0001 C CNN
+	1    9550 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1150 9550 1200
+Wire Wire Line
+	9650 1350 9650 1200
+Wire Wire Line
+	9650 1200 9550 1200
+Connection ~ 9550 1200
+$Comp
+L power:+5V #PWR018
+U 1 1 5B4F27B2
+P 2350 5400
+F 0 "#PWR018" H 2350 5250 50  0001 C CNN
+F 1 "+5V" H 2350 5540 50  0000 C CNN
+F 2 "" H 2350 5400 50  0001 C CNN
+F 3 "" H 2350 5400 50  0001 C CNN
+	1    2350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5B4F2A09
+P 2350 5900
+F 0 "#PWR019" H 2350 5650 50  0001 C CNN
+F 1 "GND" H 2350 5750 50  0000 C CNN
+F 2 "" H 2350 5900 50  0001 C CNN
+F 3 "" H 2350 5900 50  0001 C CNN
+	1    2350 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 5600 0    47   Input ~ 0
+SCL
+Text GLabel 2250 5700 0    47   Input ~ 0
+SDA
+Wire Wire Line
+	2350 5400 2350 5500
+Wire Wire Line
+	2350 5500 2450 5500
+Wire Wire Line
+	2350 5900 2350 5800
+Wire Wire Line
+	2350 5800 2450 5800
+Wire Wire Line
+	2450 5700 2250 5700
+Wire Wire Line
+	2250 5600 2450 5600
+$Comp
+L Tasker-rescue:Conn_01x01 J2
+U 1 1 5B4F3F82
+P 2650 5500
+F 0 "J2" H 2950 5500 50  0000 C CNN
+F 1 "5V" H 2800 5500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 2650 5500 50  0001 C CNN
+F 3 "" H 2650 5500 50  0001 C CNN
+	1    2650 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J3
+U 1 1 5B4F4221
+P 2650 5600
+F 0 "J3" H 2950 5600 50  0000 C CNN
+F 1 "SCL" H 2800 5600 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 2650 5600 50  0001 C CNN
+F 3 "" H 2650 5600 50  0001 C CNN
+	1    2650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J4
+U 1 1 5B4F42C7
+P 2650 5700
+F 0 "J4" H 2950 5700 50  0000 C CNN
+F 1 "SDA" H 2800 5700 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 2650 5700 50  0001 C CNN
+F 3 "" H 2650 5700 50  0001 C CNN
+	1    2650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J5
+U 1 1 5B4F4370
+P 2650 5800
+F 0 "J5" H 2950 5800 50  0000 C CNN
+F 1 "GND" H 2800 5800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 2650 5800 50  0001 C CNN
+F 3 "" H 2650 5800 50  0001 C CNN
+	1    2650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Mounting_Hole MK5
+U 1 1 5B4DF765
+P 1800 4300
+F 0 "MK5" H 2000 4350 50  0000 C CNN
+F 1 "QR Code" H 2100 4250 50  0000 C CNN
+F 2 "MeineBib:QR_Tasker" H 1800 4300 50  0001 C CNN
+F 3 "" H 1800 4300 50  0001 C CNN
+	1    1800 4300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2650 5050 1550 5050
+Wire Notes Line
+	1550 5050 1550 3000
+Text GLabel 9300 2150 2    47   Input ~ 0
+GPIO15
+$Comp
+L Tasker-rescue:PCF8574 U4
+U 1 1 5B50F77C
+P 4600 4100
+F 0 "U4" H 4250 4700 50  0000 L CNN
+F 1 "PCF8574" H 4700 4700 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-16W_7.5x10.3mm_Pitch1.27mm" H 4600 4100 50  0001 C CNN
+F 3 "" H 4600 4100 50  0001 C CNN
+	1    4600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5B50F85D
+P 4600 3350
+F 0 "#PWR020" H 4600 3200 50  0001 C CNN
+F 1 "+5V" H 4600 3490 50  0000 C CNN
+F 2 "" H 4600 3350 50  0001 C CNN
+F 3 "" H 4600 3350 50  0001 C CNN
+	1    4600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5B50FABA
+P 4600 4800
+F 0 "#PWR021" H 4600 4550 50  0001 C CNN
+F 1 "GND" H 4600 4650 50  0000 C CNN
+F 2 "" H 4600 4800 50  0001 C CNN
+F 3 "" H 4600 4800 50  0001 C CNN
+	1    4600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:GS3 B2
+U 1 1 5B50FE5D
+P 3350 4200
+F 0 "B2" H 3450 4300 50  0000 C CNN
+F 1 "GS3" H 3200 4200 50  0000 C CNN
+F 2 "Connectors:GS3" V 3438 4126 50  0001 C CNN
+F 3 "" H 3350 4200 50  0001 C CNN
+	1    3350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:GS3 B1
+U 1 1 5B510366
+P 3350 3850
+F 0 "B1" H 3450 3950 50  0000 C CNN
+F 1 "GS3" H 3200 3850 50  0000 C CNN
+F 2 "Connectors:GS3" V 3438 3776 50  0001 C CNN
+F 3 "" H 3350 3850 50  0001 C CNN
+	1    3350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:GS3 B0
+U 1 1 5B51042A
+P 3350 3500
+F 0 "B0" H 3450 3600 50  0000 C CNN
+F 1 "GS3" H 3200 3500 50  0000 C CNN
+F 2 "Connectors:GS3" V 3438 3426 50  0001 C CNN
+F 3 "" H 3350 3500 50  0001 C CNN
+	1    3350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4200 4100 4200
+Wire Wire Line
+	4100 4100 3650 4100
+Wire Wire Line
+	3650 4100 3650 3850
+Wire Wire Line
+	3650 3850 3500 3850
+Wire Wire Line
+	4100 4000 3700 4000
+Wire Wire Line
+	3700 4000 3700 3500
+Wire Wire Line
+	3700 3500 3500 3500
+$Comp
+L power:+5V #PWR022
+U 1 1 5B510A23
+P 3050 3350
+F 0 "#PWR022" H 3050 3200 50  0001 C CNN
+F 1 "+5V" H 3050 3490 50  0000 C CNN
+F 2 "" H 3050 3350 50  0001 C CNN
+F 3 "" H 3050 3350 50  0001 C CNN
+	1    3050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3350 4600 3400
+$Comp
+L power:GND #PWR023
+U 1 1 5B510C8B
+P 3100 4350
+F 0 "#PWR023" H 3100 4100 50  0001 C CNN
+F 1 "GND" H 3100 4200 50  0000 C CNN
+F 2 "" H 3100 4350 50  0001 C CNN
+F 3 "" H 3100 4350 50  0001 C CNN
+	1    3100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3600 3100 3950
+Wire Wire Line
+	3100 4300 3200 4300
+Wire Wire Line
+	3200 3950 3100 3950
+Connection ~ 3100 4300
+Wire Wire Line
+	3200 3600 3100 3600
+Connection ~ 3100 3950
+Wire Wire Line
+	3050 3350 3050 3400
+Wire Wire Line
+	3050 4100 3200 4100
+Wire Wire Line
+	3200 3750 3050 3750
+Connection ~ 3050 3750
+Wire Wire Line
+	3200 3400 3050 3400
+Connection ~ 3050 3400
+Text GLabel 4000 3700 0    47   Input ~ 0
+SCL
+Text GLabel 4000 3800 0    47   Input ~ 0
+SDA
+Wire Wire Line
+	4000 3800 4100 3800
+Wire Wire Line
+	4100 3700 4000 3700
+$Comp
+L Tasker-rescue:Conn_01x01 J6
+U 1 1 5B512975
+P 5350 3700
+F 0 "J6" H 5650 3700 50  0000 C CNN
+F 1 "P0" H 5500 3700 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 3700 50  0001 C CNN
+F 3 "" H 5350 3700 50  0001 C CNN
+	1    5350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J7
+U 1 1 5B512FBB
+P 5350 3800
+F 0 "J7" H 5650 3800 50  0000 C CNN
+F 1 "P1" H 5500 3800 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 3800 50  0001 C CNN
+F 3 "" H 5350 3800 50  0001 C CNN
+	1    5350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J8
+U 1 1 5B513080
+P 5350 3900
+F 0 "J8" H 5650 3900 50  0000 C CNN
+F 1 "P2" H 5500 3900 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 3900 50  0001 C CNN
+F 3 "" H 5350 3900 50  0001 C CNN
+	1    5350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J9
+U 1 1 5B513144
+P 5350 4000
+F 0 "J9" H 5650 4000 50  0000 C CNN
+F 1 "P3" H 5500 4000 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 4000 50  0001 C CNN
+F 3 "" H 5350 4000 50  0001 C CNN
+	1    5350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J10
+U 1 1 5B51320B
+P 5350 4100
+F 0 "J10" H 5650 4100 50  0000 C CNN
+F 1 "P4" H 5500 4100 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 4100 50  0001 C CNN
+F 3 "" H 5350 4100 50  0001 C CNN
+	1    5350 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J11
+U 1 1 5B5132D9
+P 5350 4200
+F 0 "J11" H 5650 4200 50  0000 C CNN
+F 1 "P5" H 5500 4200 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 4200 50  0001 C CNN
+F 3 "" H 5350 4200 50  0001 C CNN
+	1    5350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J12
+U 1 1 5B5133A6
+P 5350 4300
+F 0 "J12" H 5650 4300 50  0000 C CNN
+F 1 "P6" H 5500 4300 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 4300 50  0001 C CNN
+F 3 "" H 5350 4300 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Conn_01x01 J13
+U 1 1 5B513476
+P 5350 4400
+F 0 "J13" H 5650 4400 50  0000 C CNN
+F 1 "P7" H 5500 4400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x01_Pitch2.54mm" H 5350 4400 50  0001 C CNN
+F 3 "" H 5350 4400 50  0001 C CNN
+	1    5350 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3700 5150 3700
+Wire Wire Line
+	5100 3800 5150 3800
+Wire Wire Line
+	5100 3900 5150 3900
+Wire Wire Line
+	5100 4000 5150 4000
+Wire Wire Line
+	5100 4100 5150 4100
+Wire Wire Line
+	5100 4200 5150 4200
+Wire Wire Line
+	5100 4300 5150 4300
+Wire Wire Line
+	5100 4400 5150 4400
+NoConn ~ 4100 4500
+Wire Notes Line
+	1550 6100 3300 6100
+Wire Notes Line
+	3300 6100 3300 5150
+Wire Notes Line
+	3300 5150 1550 5150
+Wire Notes Line
+	1550 5150 1550 6100
+Text Notes 1650 5300 0    60   ~ 0
+I²C Bus
+Wire Notes Line
+	2750 3000 5950 3000
+Wire Notes Line
+	5950 3000 5950 5050
+Wire Notes Line
+	5950 5050 2750 5050
+Wire Notes Line
+	2750 5050 2750 3000
+Text Notes 2900 3150 0    60   ~ 0
+Port expander
+Wire Wire Line
+	1800 2200 1800 2250
+Wire Wire Line
+	3150 2450 3450 2450
+Wire Wire Line
+	3450 2150 3450 2200
+Wire Wire Line
+	2800 2150 2800 2200
+Wire Wire Line
+	2750 1350 3650 1350
+Wire Wire Line
+	5050 1350 5100 1350
+Wire Wire Line
+	5050 1950 5100 1950
+Wire Wire Line
+	6250 4250 6250 4350
+Wire Wire Line
+	6250 3400 6250 3550
+Wire Wire Line
+	6250 3550 6250 3700
+Wire Wire Line
+	6250 3700 6250 3850
+Wire Wire Line
+	6700 3850 6750 3850
+Wire Wire Line
+	7900 4050 7900 4550
+Wire Wire Line
+	7900 4550 7900 5050
+Wire Wire Line
+	7900 5050 7900 5550
+Wire Wire Line
+	7900 5550 7900 5900
+Wire Wire Line
+	8500 4950 8500 5450
+Wire Wire Line
+	8500 4450 8500 4950
+Wire Wire Line
+	8500 3950 8500 4450
+Wire Wire Line
+	7700 5450 7700 5550
+Wire Wire Line
+	7700 4950 7700 5050
+Wire Wire Line
+	7700 4450 7700 4550
+Wire Wire Line
+	7700 3950 7700 4050
+Wire Wire Line
+	7900 5900 7900 5950
+Wire Wire Line
+	7700 3450 7700 3550
+Wire Wire Line
+	8500 3450 8500 3950
+Wire Wire Line
+	9450 3950 9450 4050
+Wire Wire Line
+	9650 1750 9700 1750
+Wire Wire Line
+	9550 1850 9700 1850
+Wire Wire Line
+	9550 1200 9550 1350
+Wire Wire Line
+	3100 4300 3100 4350
+Wire Wire Line
+	3100 3950 3100 4300
+Wire Wire Line
+	3050 3750 3050 4100
+Wire Wire Line
+	3050 3400 3050 3750
+Wire Wire Line
+	4250 5850 4250 6100
+Wire Wire Line
+	4550 5550 4700 5550
+Wire Wire Line
+	4700 5550 4700 5650
+Connection ~ 4700 5550
+Wire Wire Line
+	4700 5850 4700 6100
+Wire Wire Line
+	4700 6100 4250 6100
+Connection ~ 4250 6100
+Wire Wire Line
+	4250 6100 4250 6200
+Wire Wire Line
+	4250 6100 3800 6100
+Wire Wire Line
+	3800 6100 3800 5800
+Wire Wire Line
+	3800 5500 3800 5550
+Wire Wire Line
+	3800 5550 3950 5550
+Connection ~ 3800 5550
+Wire Wire Line
+	3800 5550 3800 5600
+Wire Wire Line
+	7000 2250 7000 2150
+$Comp
+L Tasker-rescue:Mounting_Hole MK6
+U 1 1 5C7C8FA6
+P 1800 4550
+F 0 "MK6" H 2000 4600 50  0000 C CNN
+F 1 "PentThin" H 2100 4500 50  0000 C CNN
+F 2 "MeineBib:PentThin" H 1800 4550 50  0001 C CNN
+F 3 "" H 1800 4550 50  0001 C CNN
+	1    1800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tasker-rescue:Mounting_Hole MK7
+U 1 1 5C7E7C61
+P 1800 4800
+F 0 "MK7" H 2000 4850 50  0000 C CNN
+F 1 "Symbol" H 2050 4750 50  0000 C CNN
+F 2 "MeineBib:Dickbutt" H 1800 4800 50  0001 C CNN
+F 3 "" H 1800 4800 50  0001 C CNN
+	1    1800 4800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
