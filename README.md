@@ -31,9 +31,9 @@ __Double check LED, C6 and C9 polarity!__
 
 # Case
 
-![CaseTop](https://www.github.com/chrismettal/tasker/img/CaseTop.png)
-![CaseBot](https://www.github.com/chrismettal/tasker/img/CaseBot.png)
-![Built](https://www.github.com/chrismettal/tasker/img/built.png)
+![CaseTop](https://github.com/Chrismettal/Tasker/blob/master/img/CaseTop.png)
+![CaseBot](https://github.com/Chrismettal/Tasker/blob/master/img/CaseBot.png)
+![Built](https://github.com/Chrismettal/Tasker/blob/master/img/built.jpg)
 
 The case is 3d printed just like the master, but a lot thinner and i hope more elegant. Any material is fine, no supports needed if you lay the top flat face down.
 I use course M2*8 screws to mount the PCB in the upper part as well as screwing the upper part to the lower part, which gets mounted to a wall first.
