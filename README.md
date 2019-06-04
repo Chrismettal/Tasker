@@ -9,7 +9,7 @@ Based on the original analog version to use 5 Buttons and 5 LEDs with available 
 
 A PCF8574 port expander is routed over i2c on the PCB but currently not implemented in source code. Does not need to be placed for the rest to function. Could be implemented for further external triggers to set/reset automated functions.
 
-![Built](https://github.com/Chrismettal/Tasker/blob/master/img/built.png)
+![Built](https://github.com/Chrismettal/Tasker/blob/master/img/built.jpg)
 
 # Build Notes
 
