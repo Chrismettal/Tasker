@@ -9,8 +9,6 @@ Based on the original analog version to use 5 Buttons and 5 LEDs with available 
 
 A PCF8574 port expander is routed over i2c on the PCB but currently not implemented in source code. Does not need to be placed for the rest to function. Could be implemented for further external triggers to set/reset automated functions.
 
-![Built](https://www.github.com/chrismettal/tasker/img/built.png)
-
 # Build Notes
 
 Upload the gerber files made to your favourite PCB shop (or write me, i have spares).
@@ -35,6 +33,7 @@ __Double check LED, C6 and C9 polarity!__
 
 ![CaseTop](https://www.github.com/chrismettal/tasker/img/CaseTop.png)
 ![CaseBot](https://www.github.com/chrismettal/tasker/img/CaseBot.png)
+![Built](https://www.github.com/chrismettal/tasker/img/built.png)
 
 The case is 3d printed just like the master, but a lot thinner and i hope more elegant. Any material is fine, no supports needed if you lay the top flat face down.
 I use course M2*8 screws to mount the PCB in the upper part as well as screwing the upper part to the lower part, which gets mounted to a wall first.
