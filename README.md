@@ -12,6 +12,12 @@ Based on the original analog version to use 5 Buttons and 5 LEDs with available 
 
 A PCF8574 port expander is routed over i2c on the PCB but currently not implemented in source code. Does not need to be placed for the rest to function. Could be implemented for further external triggers to set/reset automated functions.
 
+# Buying
+
+The PCB is now stocked on my Tindie store!
+
+<a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
 # Build Notes
 
 Upload the gerber files made to your favourite PCB shop (or write me, i have spares).
