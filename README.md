@@ -1,5 +1,11 @@
 ![Tasker_v0.3 Logo](https://github.com/Chrismettal/Tasker/blob/master/img/logo.png)
 
+# MOVING TO GITLAB
+
+This project has been moved to Gitlab and will NOT be updated here anymore!
+
+https://gitlab.com/Chrismettal/Tasker
+
 Reworked version of Reminder with Google Calendar providing the same functionality as the original design, but providing an etched PCB making the build much cleaner and easier while providing a bit more documentation.
 The PCB mostly uses SMD parts and includes everything to enable USB-upload just like a Wemos D1 mini for example.
 
