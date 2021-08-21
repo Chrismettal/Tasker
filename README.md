@@ -1,4 +1,4 @@
-![Tasker_v0.3 Logo](https://github.com/Chrismettal/Tasker/blob/master/img/logo.png)
+![Tasker_v0.3 Logo](/img/logo.png)
 
 Reworked version of Reminder with Google Calendar providing the same functionality as the original design, but providing an etched PCB making the build much cleaner and easier while providing a bit more documentation.
 The PCB mostly uses SMD parts and includes everything to enable USB-upload just like a Wemos D1 mini for example.
@@ -6,17 +6,23 @@ The PCB mostly uses SMD parts and includes everything to enable USB-upload just 
 Please check out Andreas' video of his original design:
 https://www.youtube.com/watch?v=sm1-l5-z3ag
 
-![Tasker_v0.3 PCB](https://github.com/Chrismettal/Tasker/blob/master/img/pcbrender.png)
+![Tasker_v0.3 PCB](/img/pcbrender.png)
 
 Based on the original analog version to use 5 Buttons and 5 LEDs with available GPIO.
 
 A PCF8574 port expander is routed over i2c on the PCB but currently not implemented in source code. Does not need to be placed for the rest to function. Could be implemented for further external triggers to set/reset automated functions.
+
 
 # Buying
 
 The PCB is now stocked on my Tindie store!
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+
+If you like my work please consider supporting my caffeine addiction!
+
+<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 
 # Build Notes
 
@@ -38,11 +44,12 @@ __Double check LED, C6 and C9 polarity!__
 - You could also just order the bigger version of a NodeMCU and steal the ESP, AMS1117-3.3 ,CH340G and S8050s from that if you own a hot air rework station.
 - If you are unhappy with the brightness of the LEDs you could change the values of R15 - R19. 
 
+
 # Case
 
-![CaseTop](https://github.com/Chrismettal/Tasker/blob/master/img/CaseTop.png)
-![CaseBot](https://github.com/Chrismettal/Tasker/blob/master/img/CaseBot.png)
-![Built](https://github.com/Chrismettal/Tasker/blob/master/img/built.jpg)
+![CaseTop](/img/CaseTop.png)
+![CaseBot](/img/CaseBot.png)
+![Built](/img/built.jpg)
 
 The case is 3d printed just like the master, but a lot thinner and i hope more elegant. Any material is fine, no supports needed if you lay the top flat face down.
 I use course M2*8 screws to mount the PCB in the upper part as well as screwing the upper part to the lower part, which gets mounted to a wall first.
